@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p>
+
+<script>
+// Creating the object here
+var Person = new Object();
+     Person.fname = "shivangi", 
+     Person.lname = "jindal",
+     Person.age = 22,
+     Person.flname = function(){
+         return this.fname +" " + this.lname;
+     }
+    
+document.getElementById("demo").innerHTML = Person.fname +" "+ Person.lname + " is "+ Person.age + " years old";
+</script>
+
+</body>
+</html>
